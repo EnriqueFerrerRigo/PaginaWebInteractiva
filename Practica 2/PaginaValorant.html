@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Store</title>
+    <link rel="stylesheet" href="estils.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class = "header"> <!--Dentro de la etiqueta header empezamos el encabezado de nuestra página añadiendo una lista desordenada como barra de navegación--> 
+        <nav>
+            <ul>
+                <li><a href="PaginaValorant.html"><img src="Multimedia/Games-Valorant-1024x1024.png" class="logo"></a></li>
+                <li><a href="Agentes.html">AGENTES</a></li>
+                <li><a href="Armas.html">ARMAS</a></li>
+                <li><a href="Mapas.html">MAPAS</a></li>
+                <li><a href="Galeria.html">GALERÍA</a></li>
+                <li><a href="Registro.html">REGISTRO</a></li>
+            </ul>
+        </nav>        
+    </header>
+    <main> <!--Dentro de la etiqueta main añadimos un vídeo .mp4 que va a ser el banner de nuestra página principal (index)-->
+        <div class="banner-video">
+            <video autoplay loop muted> <!--Le decimos que se reporduzca nada más entrar en la página pero que lo haga silenciado-->
+                <source src="Multimedia/VideoValPresentacion.mp4" type="video/mp4">
+            </video> <!--Añadimos una imagen para el decorado de la página-->
+            <img src="Multimedia/buff-game-for-fun-earn-for-real-get-paid-to-play-games-valorant-logo-white-symbol-sign-text-metropolis-transparent-png-2572980.png">
+        </div>
+        
+        <button id="toggle-theme-btn" class="button" onclick="cambiarFondo()">Cambia el tema</button>
+        <div> <!--Dentro de este div explicamos lo principal y lo primero que se verá en nuestra página web añadiendo lo más básico-->
+        <p class="titulos">¿QUÉ ES VALORANT?</p>
+        <p class="textoinfo">Valorant es un juego en línea desarrollado por Riot Games. Lanzado en junio de 2020, Valorant es un 
+            juego de disparos en primera persona en el que los jugadores luchan contra equipos enemigos en diferentes modos de juego.
+            Los jugadores forman parte de una serie de Agentes con habilidades únicas, cada uno con su propio estilo de juego. Valorant 
+            se centra en la colaboración y la estrategia, en lugar de habilidades puras de un solo jugador.            
+            Valorant también presenta un sistema de calificación en línea que se actualiza periódicamente para asegurar que los jugadores
+             mantengan un equilibrio competitivo.</p>
+        <img src="Multimedia/R.jpg" class="quesvalorant">
+        </div>
+        <div class="control"> <!--Dentro de esta clase añadimos un título y creamos una lista desordenada para mayor claridad en los apartados-->
+            <p class="titulos">¿CÓMO JUGAR VALORANT?</p>
+            <p class="textoinfo">En cuanto a los controles, Valorant es un juego que utiliza la tecnología de muestreo
+                 del juego para los controles. Aquí hay una descripción general de los controles en el juego:</p>
+                    <ul class="textoinfo">
+                        <li>Movimiento: Utiliza la barra espaciadora y los botones del teclado W, A, S, D para moverse y mirar.</li>
+                        <li>Disparo principal: Presiona el botón del mouse izquierdo para disparar con el arma primaria.</li>
+                        <li>Salto: Presiona la barra espaciadora para saltar.</li>
+                        <li>Agacharse: Presiona la tecla de control para agacharse.</li>
+                        <li>Abrir menú de compra: Presiona la tecla B para abrir el menú de compra y seleccionar ítems y mejoras.</li>
+                        <li>Abrir menú de mapa: Presiona la tecla M para abrir el menú de mapa y ver la posición de tus aliados y enemigos.</li>
+                    </ul>
+            <p class="textoinfo">¡Ten en cuenta que los controles pueden ser modificados en los ajustes!</p>
+            <img src="Multimedia/img_0070.jpg" class="controles">
+            <img src="Multimedia/raze_and_reyna_render_by_lynwulf_dfgwumg.png" class="razeandreyna">    
+        </div>
+    </main>
+    <div id="mensaje" class="mensaje" onclick="mostrarEncuesta()">Haz click aquí para realizar la encuesta</div>
+    <div id="encuesta" class="encuesta oculto">
+        <h2 class="titulo">Encuesta de Valorant</h2>
+        <div>
+          <p class="titulo-rojo">Valoración:</p>
+          <button onclick="valoracion(1)">1</button>
+          <button onclick="valoracion(2)">2</button>
+          <button onclick="valoracion(3)">3</button>
+          <button onclick="valoracion(4)">4</button>
+          <button onclick="valoracion(5)">5</button>
+        </div>
+        <div>
+          <p class="titulo-rojo">Déjanos tu comentario:</p>
+          <textarea id="comentario" rows="4" cols="50"></textarea>
+        </div>
+        <div>
+          <p class="titulo-rojo">Si necesitas ayuda haznoslo saber y nos pondremos en contacto:</p>
+          <button onclick="contacto()">Contáctame</button>
+        </div>
+        <button onclick="enviarRespuestas()">Enviar</button>
+      </div>
+      
+      <div id="resultados" class="resultados oculto">
+        <h2 class="titulo">Tu encuesta se ha enviado</h2>
+      </div>
+
+    <footer> <!--Establecemos un footer con información que estará en los demás apartados de nuestra página (armas,mapas,agentes)-->
+        <p>&copy; 2023 Valorant FanPage | Ismael Benitez y Enrique Ferrer.</p>
+    </footer>
+</body>
+</html>
