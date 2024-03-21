@@ -93,7 +93,7 @@ function toggleTextoC(){
 
 
 
-/*Registro*/ 
+/*Registro, validamos usando todos los elementos posibles del DOM y usando IF / ELSE*/ 
 function validateForm() {
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
@@ -134,7 +134,7 @@ function validateForm() {
   }
 
   
-  /* */
+  /*Más funciones para validar los formularios*/
   function validateEmail(email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(email);
@@ -168,7 +168,9 @@ function validateForm() {
       alert("Por favor, completa al menos un apartado antes de enviar la encuesta");
     }
   }
-  
+// DOMContentLoaded es otra forma de hacer un bloque de código que hace que cuando el contenido de la página está 
+// cargada, esta muestra el evento, se ha usado un evento de JavaScript en esta ocasión porque de nuevo nos pareció lo más
+// cómodo, nos informamos de cómo se realizaba dicho evento y lo implementamos en nuestro código.
   document.addEventListener("DOMContentLoaded", mostrarEncuesta);
   /*Notificacion*/
   document.addEventListener("DOMContentLoaded", function() {
@@ -188,7 +190,9 @@ function validateForm() {
       notificacion.style.display = "none";
     }, 2000); // Oculta la notificación después de 2 segundos
   }
-  // cambio de tema de claro a oscuro y viceversa y cambiar el texto del boton
+
+
+  // Cambio de tema de claro a oscuro y viceversa y cambiar el texto del botón.
 
 function cambiarFondo() {
 
@@ -197,7 +201,9 @@ function cambiarFondo() {
     var isDarkMode = document.body.classList.contains('tema-oscuro');
 };
 
-// Este Javascript es solo y exclusivamente 
+// Este Javascript es solo y exclusivamente para la galería
+// Se ha usado querySelector ya que lo he aprendido a hacer de esta forma y no de otra, me parecía lo más 
+// sencillo a la par que cómodo. Me vi un tutorial en YouTube
 
 var main_img = document.querySelector('.main_img')
 var thumbnails = document.querySelectorAll('.thumbnail')
