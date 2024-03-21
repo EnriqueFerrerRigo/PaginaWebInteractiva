@@ -41,6 +41,9 @@ Tareas:
 
 + Los respectivos media queries de cada uno de los HTML
 
+
+### Extensión en el desarrollo del trabajo y las horas invertidas
+
 La validación de formularios es crucial para garantizar que los datos ingresados por los usuarios sean correctos y cumplan con ciertos criterios antes de enviarlos al servidor. Algunos métodos comunes de validación de formularios incluyen:
 
 Validación del Lado del Cliente: Se realiza en el navegador web del usuario utilizando HTML, CSS y JavaScript para verificar los campos de entrada antes de enviar el formulario. Esto proporciona una experiencia de usuario más rápida y receptiva.
