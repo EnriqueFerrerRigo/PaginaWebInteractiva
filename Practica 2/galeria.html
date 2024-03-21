@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estils.css">
+</head>
+
+<body class="bodygaleria">    
+    <header> <!--Dentro de la etiqueta header empezamos el encabezado de nuestra página añadiendo una lista desordenada como barra de navegación--> 
+        <nav>
+            <ul>
+                <li><a href="PaginaValorant.html"><img src="Multimedia/Games-Valorant-1024x1024.png" class="logo"></a></li>
+                <li><a href="Agentes.html">AGENTES</a></li>
+                <li><a href="Armas.html">ARMAS</a></li>
+                <li><a href="Mapas.html">MAPAS</a></li>
+                <li><a href="galeria.html">GALERÍA</a></li>
+                <li><a href="Registro.html">REGISTRO</a></li>
+            </ul>
+        </nav>        
+    </header>
+    <h1 class="h1img">Galería de imágenes</h1>
+    <button id="toggle-theme-btn" class="button" onclick="cambiarFondo()">Cambia el tema</button>
+    <div class="galeriaimg">
+        <div class="container">
+            <div class="img_container">
+                <img src="/Multimedia/imagen99.jpg" alt="" class="main_img">
+            </div>
+            <div class="thumbnail_container">
+                <img class="thumbnail active" src="/Multimedia/imagen1.png" alt="">
+                <img class="thumbnail active" src="/Multimedia/imagen2.png" alt="">
+                <img class="thumbnail" src="/Multimedia/imagen5.png" alt="">
+                <img class="thumbnail" src="/Multimedia/imagen4.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer> <!--Establecemos un footer con información que estará en los demás apartados de nuestra página (armas,mapas,agentes)-->
+        <p>&copy; 2023 Valorant FanPage | Ismael Benitez y Enrique Ferrer.</p>
+    </footer>
+</body>
+</html>

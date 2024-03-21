@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estils.css">
+    <title>Agentes</title>
+</head>
+<body>
+    <header> <!--Creamos el header como en la página de inicio que estará siempre presente para una mayor comodidad-->
+        <nav>
+            <ul>
+                <li><a href="PaginaValorant.html"><img src="/Multimedia/Games-Valorant-1024x1024.png" class="logo"></a></li>
+                <li><a href="Agentes.html">AGENTES</a></li>
+                <li><a href="Armas.html">ARMAS</a></li>
+                <li><a href="Mapas.html">MAPAS</a></li>
+                <li><a href="Galeria.html">GALERÍA</a></li>
+                <li><a href="Registro.html">REGISTRO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    
+    <main> <!--Ponemos un título a este apartado que será 'agentes'-->
+        <h1 class="tituloagentes">AGENTES</h1>
+    </main>
+    <button id="toggle-theme-btn" class="button" onclick="cambiarFondo()">Cambia el tema</button>
+    <div class="parrafoinicial"> <!--Creamos una clase en un div que nos servirá para estiizar nuestro párrafo y la lista ordenada-->
+        <p id="titulop">Los agentes en Valorant desempeñan un papel crucial en la dinámica y estrategia del juego, aportando diversidad táctica y habilidades únicas que influyen directamente en el resultado de las partidas. La importancia de los agentes radica en varios aspectos clave:</p>
+        <nav class="contenido-extendido" id="contenidoExtendido">
+            <ol> <!--Información inicial de los agentes-->
+                <li>
+                    <p>Diversidad de Habilidades:</p>
+                    <p>Cada agente tiene un conjunto específico de habilidades que varía desde utilidad táctica hasta habilidades ofensivas y defensivas.</p>
+                </li>
+                <li>
+                    <p>Estrategias Específicas:</p>
+                    <p>Los agentes permiten a los equipos ejecutar estrategias específicas según las habilidades de cada miembro. La elección sabia de agentes puede influir en la capacidad del equipo para controlar el mapa, plantar o desactivar la bomba, y asegurar áreas clave.</p>
+                </li>       
+                <li>
+                    <p>Coordinación y Sinergia:</p>
+                    <p>La combinación estratégica de habilidades entre los agentes fomenta la coordinación y sinergia dentro del equipo.</p>
+                </li>    
+                <li>
+                    <p>Adaptabilidad:</p>
+                    <p>La posibilidad de cambiar de agente entre rondas brinda a los jugadores la capacidad de adaptarse a la estrategia del equipo contrario y ajustar su enfoque según el desarrollo del juego.</p>
+                </li>   
+                <li>
+                    <p>Experiencia de Juego Variada:</p>
+                    <p>La amplia variedad de agentes en Valorant ofrece a los jugadores una experiencia de juego variada y emocionante. Cada agente presenta un conjunto único de mecánicas y estilos, lo que añade un elemento estratégico y táctico atractivo a cada partida.</p>
+                </li>
+            </ol>
+        </nav>
+    </div>
+
+    <section class="neon"> <!--Creamos un section para almacenar todos los div de cada agemte (en este caso Neon)-->
+        <div class="agentesimg1"> 
+            <p id="nombren">NEON</p>
+            <img src="/Multimedia/neon.jpg" id="neonimg">
+        </div>
+        <div class="neondescripcion"> <!--Creamos una clase para los párrafos de la información del agente-->
+            <p>Criada en Manilla, Filipinas, Tala Nicole Dimaapi Valdez es una Radiante empoderada por su bioelectricidad la cual se entrelaza con el engrane de radianita de la Tierra.</p>
+            <p>Con su electrizante velocidad permitiendole cargarse a la batalla, Neon no es alguien que puede prometerle a sus compañeros que saldra sin un rasguño. 
+            Mientras que tiene confianza en sus habilidades y el valor que trae a las peleas, a veces tiene problemas controlando sus poderes electricos 
+            y hace un punto al mantenerlos al tanto en todo momento.</p>
+            <span class="ocultar" id="ocultarTexto">
+                <p>Neon es una joven mujer Filipina con piel de oliva y estatura baja. 
+                Lleva una vestimenta deportiva con polainas negras y azules junto un par de zapatillas de correr. 
+                Tambien lleva un chaleco recortado azul que parecen actuar como conductos electricos para sus poderes.</p>
+                <p>Neon tiene fuertes y cercanos lazos con su familia; el momento que entro a la sede del Protocolo VALORANT, se aseguro de llamar a sus padres para darles las noticias.</p>
+                <p>También se preocupa mucho por sus compañeros durante misiones. recordandoles que se cuiden y se mantengan vivos ya que ella "odia hacer nuevos amigos".</p>
+                <p>Cuando usa sus podres radiantes para canalizar electricidad por su cuerpo, <!--Y añadimos un párrafo al final para detallar la lista de navegación
+                aunque fuera del nav para que la clase 'listaneon' no afecte a las características del párrafo-->
+                los patrones en sus brazos y cara, y sus ojos brillan celeste junto con su cabello que se para debido a la electricidad.</p>
+            </span>
+            <button class="leerMas_btn leerMas_btnGeneral" id="ocultarTexto_btn">Leer más</button>
+        </div>
+    </section>
+
+    <section class="viper"> <!--Creamos un section para almacenar todos los div de cada agemte (en este caso Viper)-->
+        <div class="agentesimg2">
+            <p id="nombrev">VIPER</p>
+            <img src="/Multimedia/viper.jpg" id="viperimg">
+        </div>
+        <div class="viperdescripcion"> <!--Creamos una clase para los párrafos de la información del agente-->
+            <p>Sabine Callas es oriunda de Estados Unidos, con posibles vínculos con Seattle. Con un doctorado y premios como el Premio R. Francis y el Premio Denton a la Innovación Sobresaliente, 
+            sus ocupaciones anteriores incluyen roles en Kingdom Corporation , convirtiéndose finalmente en su primera Directora Científica en la junta de asesores.</p>
+            <p>Viper es un agente salvaje y confiado que no teme a los enemigos y, de hecho, desea el miedo de los enemigos. No duda en llamarse villana y monstruo, y actuará como ambas cosas si eso significa el éxito de su objetivo.</p>
+            <span class="ocultar" id="ocultarTextoV">
+            <p>Al igual que sus habilidades, puede ser bastante "tóxica", 
+            sin embargo se la ve más amable y cariñosa con sus compañeros de equipo, pero no dudará en reprenderlos duramente si cometen errores de cálculo importantes en el campo de batalla.</p>
+            <p>Atrayendo la atención con su cabello negro azabache y sus ojos verde venenoso, Viper también tiene una máscara negra.</p>
+            Se pone un traje verde ceñido acompañado de placas negras afiladas en los hombros y usa guantes personalizados con los que puede liberar sus gases tóxicos. 
+            Lleva botas negras que le llegan hasta los muslos y lleva un contenedor en la espalda que transporta sus toxinas.</p>
+            <p>Viper se destaca por su capacidad para obstaculizar y dañar a los oponentes a través de una variedad de habilidades tóxicas, brindando un control estratégico en el campo de juego.</p>
+            </span>
+            <button class="leerMas_btnV leerMas_btnGeneral" id="ocultarTexto_btnV">Leer más</button>
+        </div> 
+    </section>
+
+
+
+    <section class="sova"> <!--Creamos un section para almacenar todos los div de cada agemte (en este caso Sova)-->
+        <div class="agentesimg3">
+            <p id="nombres">SOVA</p>
+            <img src="/Multimedia/sova.jpg" id="sovaimg">
+        </div>
+        <div class="sovadescripcion">
+            <p>Proveniente de la ciudad de Severomorsk, en el Óblast de Murmansk, Rusia, Sasha Novikov es un arquero que se convirtió en agente del Protocolo VALORANT.</p>
+            <p>Con su ojo derecho reemplazado por uno mecánico después de perderlo, Sova sirve principalmente como explorador del equipo, recopilando información y buscando objetivos utilizando métodos antiguos en caso de que la tecnología fallara.</p>
+            <p>Sova, un humilde cazador que ha derrotado tanto a hombres como a bestias, trabaja con cuidado y precisión, explorando y recuperando información antes de eliminar al enemigo. Él cree en el valor de la paciencia y el pensamiento estratégico.</p>
+            <span class="ocultar" id="ocultarTextoS">
+            <p>Sova tiene un tono de piel claro y luce cabello largo y rubio que cae hasta sus hombros. Tiene un ojo derecho biónico con lentes azules. Se le ve usando un abrigo forrado de piel adecuado para el clima frío de su hogar junto con una capa azul oscuro con un símbolo blanco en forma de hoja en el hombro izquierdo y una X en la espalda. 
+            Lleva guantes de cuero para tiro con arco y su dron búho descansa contra su antebrazo izquierdo. Su arco está colgado sobre su espalda en una posición de fácil acceso.</p>
+            <p>Sova rastrea, encuentra y elimina a sus enemigos con gran eficiencia y precisión. Su arco personalizado y sus increíbles habilidades de exploración impedirán que sus enemigos puedan esconderse de él.</p>
+            </span>
+            <button class="leerMas_btnS leerMas_btnGeneral" id="ocultarTexto_btnS">Leer más</button>
+        </div> 
+    </section>
+
+
+
+
+    <section class="cypher"> <!--Creamos un section para almacenar todos los div de cada agemte (en este caso Cypher)-->
+        <div class="agentesimg4"> 
+            <p id="nombrec">CYPHER</p>
+            <img src="/Multimedia/cypher.jpg" id="cypherimg">
+        </div>
+        <div class="cypherdescripcion">
+            <p>Amir El Amari es oriundo de Rabat, Marruecos. Al crecer y vivir allí en la pobreza en ocasiones, los recursos de su ciudad se agotaron debido a las actividades de Kingdom Corporation en el área y, como resultado, El Amari abrigó una visión negativa hacia ellos.</p>
+            <p>Cypher recopila constantemente secretos, información e inteligencia, hasta el punto de lograr recuperar las contraseñas de todos en el Protocolo VALORANT. 
+            Su continua pasión por recopilar cualquier información que pueda encontrar no siempre es compartida por sus compañeros de equipo</p>
+            <span class="ocultar" id="ocultarTextoC">
+            <p>La apariencia general de Cypher se asemeja a la representación típica de un detective o un detective. Su prenda principal es una gran bata blanca que se extiende desde las espinillas hasta el cuello. 
+            Este abrigo es donde guarda sus útiles. Lleva pantalones grises apagados, que se combinan con zapatos negros. 
+            Los colores dorado, marrón y azul acentúan su combinación de colores predominantemente blanco y negro. En particular, ni un solo centímetro de la piel de Cypher es directamente visible.</p>
+            <p>También es conocido por ser bastante descarado y tiende a tomar piezas o herramientas de sus compañeros agentes cuando las necesita, a menudo informándoles más tarde que lo ha hecho en lugar de preguntarles si puede usarlas de antemano.</p>
+            <p>Cypher se especializa en conseguir informacion de los enemigos y es capaz de asegurar una area. No hay secreto a salvo ni maniobra que pase desapercibida. Cypher siempre está viendo.</p>
+            </span>
+
+            <button class="leerMas_btnC leerMas_btnGeneral" id="ocultarTexto_btnC">Leer más</button>
+
+        </div>
+    
+    
+    </section>
+    
+    <script src="script.js"></script>
+
+
+    <footer>
+        <p>&copy; 2023 Valorant FanPage | Ismael Benitez y Enrique Ferrer.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapas</title>
+    <link rel="stylesheet" href="estils.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header> <!--Creamos el header como en la página de inicio que estará siempre presente para una mayor comodidad-->
+        <nav>
+            <ul>
+                <li><a href="PaginaValorant.html"><img src="/Multimedia/Games-Valorant-1024x1024.png" class="logo"></a></li>
+                <li><a href="Agentes.html">AGENTES</a></li>
+                <li><a href="Armas.html">ARMAS</a></li>
+                <li><a href="Mapas.html">MAPAS</a></li>
+                <li><a href="galeria.html">GALERÍA</a></li>
+                <li><a href="Registro.html">REGISTRO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> <!--Ponemos el título de la página (en este caso Mapas)-->
+        <h1 class="titulomapa">MAPAS</h1>
+    </main>
+    <button id="toggle-theme-btn" class="button" onclick="cambiarFondo()">Cambia el tema</button>
+    <section class="ascent"> <!--Creamos un contenedor 'section' llamado 'ascent' donde estableceremos todas las carecterísticas de nuestro mapa-->
+        <img src="Multimedia/ascent.jpg" id="ascentimg"> <!--Añadimos la imagen-->
+        <div class="parrafosasc"> <!--Creamos clases para cada cosa que queramos modificar en la página, en este caso la información escrita -->
+            <h2 id="ascentitulo">ASCENT</h2>
+            <p>¡Bienvenido a Ascent, el dinámico campo de batalla de Valorant con un entorno urbano moderno! 
+                Explora edificios imponentes, calles bulliciosas y plazas expansivas mientras enfrentas desafíos 
+                estratégicos en los sitios de bomba A y B. La zona central, "Mid", es crucial para tomar decisiones tácticas. 
+                Con elevaciones estratégicas y múltiples rutas, Ascent ofrece una experiencia emocionante y única en Valorant. 
+                ¡Prepárate para la acción en este vibrante escenario urbano!</p>
+
+            <p>En Ascent, la paleta de colores ha sido cuidadosamente seleccionada para reflejar un entorno ciudadano moderno y dinámico.
+                Los tonos predominantes incluyen grises y negros, que se fusionan con la arquitectura de edificios imponentes y las estructuras urbanas. 
+                Estos colores neutrales proporcionan una base sólida y realista al paisaje.
+            </p>
+        </div>
+
+        <div class="miniasc"> <!--Añadimos una clase para el minimapa que tendrá sus estilos propios.-->
+            <img src="/Multimedia/ascentminimapa.jpg" id="miniascimg"> <!--Añadimos la imagen en cuestión-->
+            <p id="miniascp">El minimapa de Ascent en Valorant es una representación simplificada del terreno y las estructuras del mapa. Incluye marcadores para los sitios de bomba (A y B), 
+            indicaciones de rutas, representaciones de alturas y escaleras, y distinciones entre áreas abiertas y cerradas.
+            Estos elementos son esenciales para que los jugadores naveguen, planifiquen tácticas y tomen decisiones estratégicas durante las partidas.</p>
+        </div>
+    </section> <!--Y cerramos el section del mapa 'ascent' para pasar al siguiente-->
+
+
+    <section class="bind"> <!--Creamos un contenedor 'section' llamado 'bind' donde estableceremos todas las carecterísticas de nuestro mapa'-->
+        <img src="/Multimedia/bind.jpg" id="bindimg">
+        <div class="parrafosbind">
+            <h2 id="binditulo">BIND</h2>
+            <p>¡Bienvenido a Bind, uno de los mapas más singulares y desafiantes en el mundo de Valorant! 
+            Este exquisito escenario, con sus características únicas, ofrece a los agentes un entorno estratégico donde la comunicación y la adaptabilidad son clave para la victoria.</p>
+
+            <p>Bind, situado en Marruecos, destaca por su entorno desértico y una arquitectura distintiva. 
+            Este mapa se caracteriza por dos sitios de bomba, A y B, conectados por pasillos estrechos y el intrigante "Teletransportador", 
+            que brinda oportunidades tácticas y desencadena estrategias ingeniosas.</p>
+
+            <p>La paleta de colores en el mapa Bind de Valorant se inspira en los cálidos tonos terrosos y las vibraciones desérticas que definen su entorno. 
+            Estos colores contribuyen a la atmósfera única del escenario y ofrecen una estética que combina la arquitectura marroquí con un toque futurista.</p>
+        </div>
+
+        <div class="minibind"> <!--Añadimos una clase para el minimapa que tendrá sus estilos propios pero seguirá dentro de nuestra clase 'parrafobind'-->
+            <img src="/Multimedia/bindminimapa.jpg" id="minibindimg">
+            <p id="minibindp">El minimapa de Bind en Valorant es una representación simplificada del terreno y las estructuras del mapa. Incluye marcadores para los sitios de bomba (A y B), 
+            indicadores de las ubicaciones donde se encuentran los teletransportadores, y distinciones entre áreas abiertas y cerradas.
+            Estos detalles son esenciales para que los jugadores se ubiquen, planifiquen estrategias y tomen decisiones tácticas durante el juego.</p>
+        </div>
+    </section>
+
+    <section class="breeze"> <!--Creamos un contenedor 'section' llamado 'breeze' donde estableceremos todas las carecterísticas de nuestro mapa-->
+        <img src="/Multimedia/breeze.jpg" id="breezeimg">
+        <div class="parrafosbreeze">
+            <h2 id="breezeitulo">BREEZE</h2>
+            <p>¡Bienvenido a Breeze, una experiencia de juego expansiva y llena de desafíos en el universo de Valorant! Este mapa excepcional te sumerge en un entorno tropical y vasto, ofreciendo oportunidades únicas para estrategias tácticas y emocionantes enfrentamientos.</p>
+
+            <p>Ubicado en una isla en el Caribe, Breeze destaca por sus espacios abiertos y estructuras expansivas. Dos bombas, A y B, se encuentran en ubicaciones clave, mientras que las áreas exteriores proporcionan múltiples rutas y oportunidades para enfrentamientos estratégicos.</p>
+
+            <p>La paleta de Breeze evoca sensaciones de calidez y aventura. La rica y variada paleta de colores de Breeze no solo contribuye a la estética del mapa, sino que también influye en la jugabilidad, ofreciendo una experiencia visual única que transporta a los jugadores a un exótico paraíso de combate en Valorant.</p>
+        </div>
+
+        <div class="minibreeze"> <!--Añadimos una clase para el minimapa que tendrá sus estilos propios pero seguirá dentro de nuestra clase 'parrafobreeze'-->
+            <img src="/Multimedia/breezeminimapa.jpg" id="minibreezeimg">
+            <p id="minibreezep">El minimapa de Breeze en Valorant ofrece una visión simplificada del terreno y las estructuras clave en el mapa. En él, encontrarás marcadores para los sitios de bomba (A y B), rutas principales,
+            y como novedad una zona del mapa completamente nueva y exclusiva de este mapa que es la zona 'tubo' de el medio. Como se puede apreciar esta zona será una zona de choque entre los jugadores
+            de los dos equipos, como también lo es la zona medio del mismo.                
+            </p>
+        </div>
+    </section>
+
+    <section class="split"> <!--Creamos un contenedor 'section' llamado 'split' donde estableceremos todas las carecterísticas de nuestro mapa-->
+        <img src="/Multimedia/split.jpg" id="splitimg">
+        <div class="parrafossplit">
+            <h2 id="splititulo">SPLIT</h2>
+            <p>¡Bienvenido a Split, un mapa verticalmente desafiante en el mundo de Valorant! 
+            Esta ubicación urbana y futurista presenta una arquitectura única y múltiples niveles verticales que pondrán a prueba tus habilidades tácticas y coordinación de equipo.</p>
+
+            <p>Split se sitúa en una ciudad europea con un diseño arquitectónico futurista. Su característica más distintiva es la presencia de múltiples niveles, 
+            creando un entorno vertical que añade complejidad a las estrategias. Los dos sitios de bomba, A y B, se encuentran en ubicaciones estratégicas.</p>
+            <p>La paleta de colores de Split logra un equilibrio entre la modernidad y la complejidad táctica, creando un entorno visualmente estimulante y funcional. Cada tono se selecciona cuidadosamente para realzar la jugabilidad y la experiencia estética en Valorant.</p>
+        </div>
+        <div class="minisplit"> 
+            <img src="/Multimedia/splitminimapa.jpg" id="minisplitimg"> <!--Añadimos una clase para el minimapa que tendrá sus estilos propios pero seguirá dentro de nuestra clase 'parrafosplit'-->
+            <p id="minisplitp">El minimapa de Split en Valorant es una representación visual simplificada del entorno de juego, proporcionando información topográfica y estructural clave. Este incluye marcadores para los sitios de bomba (A y B), indicaciones de rutas principales,
+            y zonas completamente nuevas como las zonas en las que se han añadido cuerdas para la movilidad personal del jugador. Estas se pueden encontrar cerca del punto A y del punto B.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Valorant FanPage | Ismael Benitez y Enrique Ferrer.</p>
+    </footer>
+</body>
+</html>

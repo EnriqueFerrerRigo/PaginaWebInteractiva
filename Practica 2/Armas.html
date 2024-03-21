@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Armas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='estils.css'>
+    <script src="script.js"></script>
+
+</head>
+<!--Barra de inicio-->
+<body>
+    <header  class="fondo">
+        <nav>
+            <ul>
+                <li><a href="PaginaValorant.html"><img src="Multimedia/Games-Valorant-1024x1024.png" class="logo"></a></li>
+                <li><a href="Agentes.html">AGENTES</a></li>
+                <li><a href="Armas.html">ARMAS</a></li>
+                <li><a href="Mapas.html">MAPAS</a></li>
+                <li><a href="Galeria.html">GALERÍA</a></li>
+                <li><a href="Registro.html">REGISTRO</a></li>
+            </ul>
+        </nav>
+    </header>
+<!--Aqui estaran las diferentes clases de armas con una breve frase. Usamos el div para separar cada clase.-->
+    <p class="tituloarmas">ARMAS</p>
+    <!--Armas de una mano-->
+    <button id="toggle-theme-btn" class="button" onclick="cambiarFondo()">Cambia el tema</button>
+    <div>
+        <p class="tituloclasesarmas">ARMAS DE UNA MANO</p>
+        <ul>
+            <li class="titulodelasarmas">CLASSIC</li>
+            <p class="textodescr">Ligera y versátil,el arma por defecto es todo un clásico. PRECIO: GRATIS</p>
+            <img src="Multimedia/Valorant-Classic.webp" class="imgarmas">
+            <li class="titulodelasarmas">SHORTY</li>
+            <p class="textodescr">Soprended a vuestros enemigos de cerca para maximizar su efectividad. PRECIO: 350 VP
+            </p>
+            <img src="Multimedia/valorant-standard-shorty-weapon-skin.png" class="imgarmas">
+            <li class="titulodelasarmas">FRENZY</li>
+            <p class="textodescr">De cerca, lo mejor es mantener pulsado el gatillo. De lejos, hay que cambiar de
+                estrategia. PRECIO: 450 VP</p>
+            <img src="Multimedia/R.png" class="imgarmas">
+            <li class="titulodelasarmas">GHOST</li>
+            <p class="textodescr">Con silenciador, precisa y estupenda a cualquier distancia. PRECIO: 500 VP</p>
+            <img src="Multimedia/ghost.png" class="imgarmas">
+            <li class="titulodelasarmas">SHERIFF</li>
+            <p class="textodescr">Un revólver perfecto para aquellos que busquen siempre el disparo a la cabeza. PRECIO:
+                700 VP</p>
+            <img src="Multimedia/sheriff.png" class="imgarmas">
+        </ul>
+    </div>
+    <!--SUBFUSILES-->
+    <div>
+        <p class="tituloclasesarmas">SUBFUSILES</p>
+        <ul>
+            <li class="titulodelasarmas">STINGER</li>
+            <p class="textodescr">Cuando sientan el azote de las primeras balas, sabrán que les ha llegado su hora.
+                PRECIO: 1100 VP</p>
+            <img src="Multimedia/stinger.png" class="imgarmas">
+            <li class="titulodelasarmas">SPECTRE</li>
+            <p class="textodescr">Ante la duda, apostad por el Spectre. PRECIO: 1600 VP</p>
+            <img src="Multimedia/spectre.png" class="imgarmas">
+        </ul>
+    </div>
+    <!--ESCOPETAS-->
+    <div>
+        <p class="tituloclasesarmas">ESCOPETAS</p>
+        <ul>
+            <li class="titulodelasarmas">BUCKY</li>
+            <p class="textodescr">Seáis atacantes o defensores, lo que es que estáis armados con una escopeta de
+                primera. PRECIO: 900 VP</p>
+            <img src="Multimedia/bucky.png" class="imgarmas">
+            <li class="titulodelasarmas">JUDGE</li>
+            <p class="textodescr">Una escopeta automática que proporciona mucho daño de forma fiable. PRECIO: 1500 VP
+            </p>
+            <img src="Multimedia/judge.png" class="imgarmas">
+
+        </ul>
+    </div>
+    <!--FUSILES-->
+    <div>
+        <p class="tituloclasesarmas">FUSILES</p>
+        <ul>
+            <li class="titulodelasarmas">BULLDOG</li>
+            <p class="textodescr">No hay sensación como la de acabar con un enemigo gracias a Bulldog. PRECIO: 2050 VP
+            </p>
+            <img src="Multimedia/bulldog.png" class="imgarmas">
+            <li class="titulodelasarmas">GUARDIAN</li>
+            <p class="textodescr">Brilla en manos de los asesinos más pacientes. PRECIO: 2250 VP</p>
+            <img src="Multimedia/guardian.png" class="imgarmas">
+            <li class="titulodelasarmas">PHANTOM</li>
+            <p class="textodescr">Un arma equilibrada pensada para disparar muchas balas con estabilidad. PRECIO: 2900
+                VP</p>
+            <img src="Multimedia/phantom.png" class="imgarmas">
+            <li class="titulodelasarmas">VANDAL</li>
+            <p class="textodescr">Esta precisa y potente arma es temible si se dispara en ráfagas cortas. VANDAL: 2900
+                VP</p>
+            <img src="Multimedia/vandal.png" class="imgarmas">
+        </ul>
+    </div>
+    <!--FRANCOTIRADORES-->
+    <div>
+        <p class="tituloclasesarmas">FRANCOTIRADORES</p>
+        <ul>
+            <li class="titulodelasarmas">MARSHALL</li>
+            <p class="textodescr">Haceos con un ángulo, respirad hondo y conseguid que se arrepientan de doblar la esquina. PRECIO: 950 VP</p>
+            <img src="Multimedia/marshal.png" class="imgarmas">
+            <li class="titulodelasarmas">OPERATOR</li>
+            <p class="textodescr">Poneos cómodos, porque la zona es vuestra. PRECIO: 4700 VP</p>
+            <img src="Multimedia/operator.png" class="imgarmas">
+        </ul>
+    </div>
+    <!--ARMAS PESADAS-->
+    <div>
+        <p class="tituloclasesarmas">ARMAS PESADAS</p>
+        <ul>
+            <li class="titulodelasarmas">ARES</li>
+            <p class="textodescr">Será grande, pero de torpe no tiene un pelo. PRECIO: 1750 VP</p>
+            <img src="Multimedia/ares.png" class="imgarmas">
+            <li class="titulodelasarmas">ODIN</li>
+            <p class="textodescr">Esta monstruosidad podrá traeros la gloria  y sembrar la desesperación entre los enemigos. PRECIO: 3200 VP</p>
+            <img src="Multimedia/odin.png" class="imgarmas">
+        </ul>
+    </div>
+    <!--CUCHILLO-->
+    <div>
+        <p class="tituloclasesarmas">CUCHILLO DE COMBATE</p>
+        <ul>
+            <li class="titulodelasarmas">CUCHILLO DE COMBATE</li>
+            <p class="textodescr">Una solución de lo mas íntima. PRECIO: GRATIS</p>
+            <img src="Multimedia/cuchillo default.png" class="imgarmas">
+        </ul>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2023 Valorant FanPage | Ismael Benitez y Enrique Ferrer.</p>
+    </footer>
+</body>
+</html>
